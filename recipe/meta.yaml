@@ -1,0 +1,43 @@
+{% set name = "hxntools" %}
+{% set version = "0.4.2" %}
+{% set sha256 = "" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://github.com/NSLS-II-HXN/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - bluesky
+    - boltons
+    - cycler
+    - databroker >=0.11.1
+    - h5py >=2.5.0
+    - numpy
+    - ophyd
+    - pandas
+    - pyepics
+    - scipy
+
+test:
+  imports:
+    - hxntools
+
+about:
+  home: https://github.com/NSLS-II-HXN/hxntools
+  license: BSD
+  license_file: LICENSE
+  summary: NSLS-II's Hard X-ray Nanoprobe data acquisition tools
