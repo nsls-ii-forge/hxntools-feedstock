@@ -5,7 +5,7 @@ Home: https://github.com/NSLS-II-HXN/hxntools
 
 Package license: BSD
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: NSLS-II's Hard X-ray Nanoprobe data acquisition tools
 
