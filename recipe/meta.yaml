@@ -24,8 +24,10 @@ requirements:
     - bluesky
     - boltons
     - cycler
-    - databroker >=0.11.1
-    - h5py >=2.5.0
+    - databroker
+    - h5py
+    - matplotlib
+    - nslsii
     - numpy
     - ophyd
     - pandas
@@ -38,6 +40,6 @@ test:
 
 about:
   home: https://github.com/NSLS-II-HXN/hxntools
-  license: BSD
+  license: BSD-3-Clause
   license_file: LICENSE
-  summary: NSLS-II's Hard X-ray Nanoprobe data acquisition tools
+  summary: NSLS-II Hard X-ray Nanoprobe data acquisition tools
