@@ -1,6 +1,6 @@
 {% set name = "hxntools" %}
-{% set version = "0.4.3" %}
-{% set sha256 = "b6fab7b09636145e4017609488a2fccb153ee2f5fc629a6eaf12fc9a9e2e6a04" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "4edf0bc2740e3dee44c33fa4f7fcdc17f854a8c719a02bf238b9e904155c7b89" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
