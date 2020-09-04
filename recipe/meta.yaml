@@ -1,13 +1,13 @@
 {% set name = "hxntools" %}
-{% set version = "0.5.0" %}
-{% set sha256 = "4edf0bc2740e3dee44c33fa4f7fcdc17f854a8c719a02bf238b9e904155c7b89" %}
+{% set version = "0.5.1" %}
+{% set sha256 = "ff248d65eec4c015d8d0e622ad465523d900ff485cb297ea8e25c23b0a9edb89" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/NSLS-II-HXN/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
