@@ -1,6 +1,6 @@
 {% set name = "hxntools" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "ff248d65eec4c015d8d0e622ad465523d900ff485cb297ea8e25c23b0a9edb89" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "e8180c45143bab859821029ac9e47e78bb8ecde0456663dd774504e648e451fc" %}
 
 package:
   name: {{ name|lower }}
